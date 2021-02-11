@@ -1,5 +1,7 @@
 package lesson5.homework;
 
+import java.util.Scanner;
+
 public class Task3 {
 
     /**
@@ -25,6 +27,7 @@ public class Task3 {
      *
      */
     public static void main(String[] args) {
-        // write your code here
+
+
     }
 }
