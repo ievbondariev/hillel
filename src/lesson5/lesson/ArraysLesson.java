@@ -1,13 +1,13 @@
 package lesson5.lesson;
 
-import java.util.Arrays;
-import java.util.Scanner;
+//import java.util.Arrays;
+//import java.util.Scanner;
 
 public class ArraysLesson {
     public static void main(String[] args) {
         int[] arr; //= {1, 2, 3, 4, 5};
-//        arr = new int[]{1, 2, 3};
-        String[] arrSrt;
+        arr = new int[]{1, 2, 3};
+//        String[] arrSrt;
 //        arr[0] = 5;
 //        System.out.println(arr[0]);
 
@@ -15,9 +15,9 @@ public class ArraysLesson {
 //            System.out.println(arr[i]);
 //        }
 
-//        for (int cell : arr) {
-//            System.out.println(cell);
-//        }
+        for (int cell : arr) {
+            System.out.println(cell);
+        }
 
 //        System.out.println(Arrays.toString(arr));
 
