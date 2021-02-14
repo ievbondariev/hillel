@@ -1,5 +1,7 @@
 package lesson5.homework;
 
+import java.util.Scanner;
+
 public class Task5 {
 
     /**
@@ -24,6 +26,23 @@ public class Task5 {
      * RU: https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8
      */
     public static void main(String[] args) {
-        // write your code here
+
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int[] f = new int[100];
+        f[0] = 0;
+        f[1] = 1;
+
+        int i = 1;
+        while (f[i] < a) {
+            f[i + 1] = f[i] + f[i - 1];
+            i++;
+        }
+            if (a == f[i]) {
+                System.out.println(i);
+
+            } else {
+                System.out.println("-1");
+            }
+        }
     }
-}

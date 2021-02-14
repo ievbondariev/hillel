@@ -26,21 +26,36 @@ public class Task4 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
+//        do {
+//            n = scanner.nextInt();
+//        } while ( arr.length !=n);
 
-        for (int i = 0; i < arr.length; i++) {
+
+        for (int i = 1; i < arr.length; i++) {
             arr[i] = scanner.nextInt();
-            if (arr[i] > 0) {
-                System.out.println(arr[i] + " " + arr[++i]);
-                break;
-            } else if (arr[i] < 0) {
-                System.out.println(arr[i] + " " + arr[++i]);
-                break;
-            } else {
-                System.out.println();
+
+            if (arr[i - 1] > 0 && arr[i] > 0) {
+                if (arr[i - 1] < arr[i]) {
+                    System.out.println(arr[i - 1] + " " + arr[i]);
+                } else {
+                    System.out.println(arr[i] + " " + arr[i - 1]);
+                }
+                    break;
+            }
+            else if (arr[i - 1] < 0 && arr[i] < 0) {
+                if  (arr[i - 1] < arr[i]) {
+                    System.out.println(arr[i - 1] + " " + arr[i]);
+                } else {
+                    System.out.println(arr[i] + " " + arr[i - 1]);
+                }
+                    break;
+                } else {
+                System.out.println(" ");
             }
         }
     }
 }
+
 
 
 
