@@ -17,7 +17,7 @@ import java.util.Scanner;
             Double maleWeight = scanner.nextDouble();
 
             Double bodyMassIntex = maleWeight / (manHeight * manHeight);
-            System.out.println("Ваш ИМТ = " + bodyMassIntex);
+            System.out.println("Твой ИМТ = " + bodyMassIntex);
 
             if (bodyMassIntex > 12 && bodyMassIntex <= 16) {
                 System.out.println("\nУ тебя выраженный дефицит массы тела, опасный для здоровья!");
