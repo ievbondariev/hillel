@@ -24,7 +24,7 @@ import java.util.Scanner;
                 return;
             }
             if (bodyMassIntex > 16 && bodyMassIntex < 18.5) {
-                System.out.println("\nУ тебя недостаточная масса тела (дефицит), пришло время скушать шоколадку)");
+                System.out.println("\nУ тебя недостаточная масса тела (дефицит), пришло время кушать шоколадку)");
                 return;
             }
             if (bodyMassIntex > 18.5 && bodyMassIntex < 24) {
