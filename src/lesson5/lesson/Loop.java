@@ -13,16 +13,16 @@ public class Loop {
 //        System.out.println(++i);
 //        System.out.println(i++);
 //        System.out.println(i);
-
+//
 //        int i1 = 0;
 //        while (i1 < 10) {
 //            System.out.println(++i1);
 //        }
 //        System.out.println(i1 * 10);
 //
-//        for (int i = 0; i < 10; i++) {
-//            System.out.println(i + 1);
-//        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + 1);
+        }
 //
 //        int i = 0;
 //        for ( ; i < 10 ; ) {
@@ -92,8 +92,8 @@ public class Loop {
 //            }
 //            System.out.println();
 //        }
-
-        Scanner scanner = new Scanner(System.in);
+//
+//        Scanner scanner = new Scanner(System.in);
 //        int number;
 //        do {
 //            System.out.println("Enter any number:");

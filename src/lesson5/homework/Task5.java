@@ -31,10 +31,13 @@ public class Task5 {
         long[] fib = new long[1000];
         fib[0] = 0;
         fib[1] = 1;
-
-        for (int i = 1; i < n; i++) {
-            fib[i + 1] = fib[i] + fib[i - 1];
-            System.out.println(i + ": " + fib[i + 1]);
+        int i=1;
+        while (fib[i] < n) {
+            fib[i + 1] = fib[i] + fib[i-1];
+            i++;}
+            if (n == fib[i]) {
+            System.out.println(i);}
+            else System.out.println(-1);
         }
     }
-}
+
