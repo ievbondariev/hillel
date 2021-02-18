@@ -1,5 +1,7 @@
 package lesson5.homework;
 
+import java.util.Scanner;
+
 public class Task4 {
 
     /**
@@ -18,6 +20,19 @@ public class Task4 {
      * 2 3
      */
     public static void main(String[] args) {
-        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        int kolichestvoElementovVmassive = scanner.nextInt();
+        int[] arr = new int[kolichestvoElementovVmassive];
+
+        for (int i = 0; i < kolichestvoElementovVmassive; i++) {
+            arr[i] = scanner.nextInt();
+
+
+        } for (int i = 1; i < kolichestvoElementovVmassive; i++)
+
+            if (arr[i] > 0 && arr[i-1] > 0 || arr[i] < 0 && arr[i-1] < 0) {
+
+                System.out.println(arr[i-1] + " " + arr[i]);
+                break; }
     }
 }
