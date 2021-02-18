@@ -1,5 +1,5 @@
 package lesson5.homework;
-
+import java.util.Scanner;
 public class Task3 {
 
     /**
@@ -26,5 +26,14 @@ public class Task3 {
      */
     public static void main(String[] args) {
         // write your code here
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        int sum = 0;
+
+        while (num != 0) {
+            sum += num;
+            num = input.nextInt();
+        }
+        System.out.println(sum);
     }
 }

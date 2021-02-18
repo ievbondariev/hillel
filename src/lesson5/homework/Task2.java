@@ -1,5 +1,5 @@
 package lesson5.homework;
-
+import java.util.Scanner;
 public class Task2 {
 
     /**
@@ -24,5 +24,15 @@ public class Task2 {
      */
     public static void main(String[] args) {
         // write your code here
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input num: ");
+        int num = input.nextInt();
+
+        while (num != 1 && num % 2 == 0) {
+            num /= 2;
+        }
+
+        System.out.println(num == 1 ? "YES" : "NO");
+        }
     }
-}
+

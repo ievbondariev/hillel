@@ -1,7 +1,5 @@
 package lesson5.homework;
-
 import java.util.Scanner;
-
 public class Task5 {
 
     /**
@@ -26,15 +24,23 @@ public class Task5 {
      * RU: https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        long[] fib = new long[1000];
-        fib[0] = 0;
-        fib[1] = 1;
+        // write your code here
+      Scanner scanner = new Scanner (System.in);
+      int a = scanner.nextInt();
+      int n0 = 0;
+      int n1 = 1;
+      int i = 1;
+      while (a>n1) {
+          int temp = n1;
 
-        for (int i = 1; i < n; i++) {
-            fib[i + 1] = fib[i] + fib[i - 1];
-            System.out.println(i + ": " + fib[i + 1]);
-        }
+          n1 += n0;
+          n0 = temp;
+          i++;
+      } if (n1 == a) {
+            System.out.println(i);
+        } else {
+              System.out.println(-1);
+          }
+      }
     }
-}
+
