@@ -1,4 +1,4 @@
-package lesson6.homework;
+
 
 import java.util.Scanner;
 
@@ -19,7 +19,6 @@ public class Task {
         System.out.println("Hi, I'm Tomas - your personal chat bot! How can I help you?");
         String userAnswer;
         while (true) {
-
             userAnswer = scanner.nextLine();
             switch (userAnswer) {
                 case "Exit":
@@ -33,9 +32,12 @@ public class Task {
                 case "Triangle":
                 case "triangle":
                     System.out.println("Enter the value of the sides of the triangle:");
-                    int a = scanner.nextInt();
-                    int b = scanner.nextInt();
-                    int c = scanner.nextInt();
+                    System.out.println("Enter A:");
+                    int a = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Enter B:");
+                    int b = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Enter C:");
+                    int c = Integer.parseInt(scanner.nextLine());
                     int p = ((a + b + c) / 2);
                     int resultTriangle = (int) Math.sqrt(p * (p - a) * (p - b) * (p - c));
                     System.out.println(resultTriangle);
@@ -44,15 +46,18 @@ public class Task {
                 case "Rectangle":
                 case "rectangle":
                     System.out.println("Enter the value of the sides of the rectangle:");
-                    int a1 = scanner.nextInt();
-                    int b1 = scanner.nextInt();
+                    System.out.println("Enter A:");
+                    int a1 = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Enter B:");
+                    int b1 = Integer.parseInt(scanner.nextLine());
                     int resultRectangle = a1 * b1;
                     System.out.println(resultRectangle);
                     System.out.println("How can I help you?");
                     break;
                 default:
-                    System.out.println("Sorry, I don't understand you :(");
-                    break;
+                    System.out.println("Are u crazy?");
+
+
             }
         }
 

@@ -7,9 +7,8 @@ public class Example {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Hi, I'm Tomas - your personal chat bot! How can I help you?");
-        String userAnswer = scanner.nextLine();
-        for (;;) {
-            System.out.println("How can I help you?");
+        String userAnswer;
+        while (true) {
             userAnswer = scanner.nextLine();
             switch (userAnswer) {
                 case "Exit":
