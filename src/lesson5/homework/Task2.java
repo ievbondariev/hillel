@@ -1,7 +1,5 @@
 package lesson5.homework;
 
-import com.sun.org.apache.xerces.internal.xs.ItemPSVI;
-
 import java.util.Scanner;
 
 public class Task2 {
