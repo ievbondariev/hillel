@@ -23,6 +23,9 @@ public class Task4 {
      * 2 3
      */
     public static void main(String[] args) {
+
+        // TODO: array size = 5, array = { -1 2 -1 3 4 }; Expected output: 3 4
+
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
