@@ -1,6 +1,5 @@
 package lesson5.homework;
 
-import java.util.Arrays;
 import java.util.Scanner;
 public class Task5 {
 
@@ -57,6 +56,32 @@ public class Task5 {
                 }
             }
         }
+
+    public static void main1(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число больше 0:  ");
+
+        int n = scanner.nextInt();
+        while(n <= 0) {
+            System.out.println("Фигня твое число, заново!");
+            System.out.println("Введите число больше 0:  ");
+            n = scanner.nextInt();
+        }
+
+        int fib1 = 0;
+        int fib2 = 1;
+        for(int i = 1; i <= n; i++) {
+            int fibNext = fib2 + fib1;
+            fib1 = fib2;
+            fib2 = fibNext;
+            if (n == fibNext) {
+                System.out.println(i);
+                return;
+            }
+        }
+
+        System.out.println("-1");
+    }
 
 }
 
