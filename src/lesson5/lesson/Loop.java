@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Loop {
 
     public static void main(String[] args) {
-//        int i = 1;
+//        int i = 0;
 //
 //        i++; // => i += 1 => i = i + 1
 //        i--; // => i -= 1 => i = i - 1;
@@ -56,7 +56,7 @@ public class Loop {
 //                break;
 //            }
 //        }
-
+//
 //        for (int i = 0; i < 10; i++) {
 //            if (i == 4) {
 //                continue;
@@ -89,7 +89,7 @@ public class Loop {
 //            System.out.println();
 //        }
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        int number;
 //        do {
 //            System.out.println("Enter any number:");

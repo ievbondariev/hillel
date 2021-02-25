@@ -1,5 +1,7 @@
 package lesson5.homework;
 
+import java.util.Scanner;
+
 public class Task1 {
 
     /**
@@ -18,6 +20,11 @@ public class Task1 {
      * 1 4 9 16 25 36 49
      */
     public static void main(String[] args) {
-        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int i = 1;
+        for (i = 1; i*i <= N; i++) {
+            System.out.println(i*i);
+        }
     }
 }
