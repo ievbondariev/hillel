@@ -14,13 +14,14 @@ public class Loop {
 //        System.out.println(i++);
 //        System.out.println(i);
 
-//        int i = 0;
-//        while (i < 10) {
-//            System.out.println(++i);
+//        int i1 = 0;
+//        while (i1 < 10) {
+//            System.out.println(++i1);
 //        }
-
+//        System.out.println(i1 * 10);
+//
 //        for (int i = 0; i < 10; i++) {
-//            System.out.println(i);
+//            System.out.println(i + 1);
 //        }
 //
 //        int i = 0;
@@ -50,26 +51,29 @@ public class Loop {
 
 //        int i = 0;
 //        while (true) {
-//            System.out.println(i);
-//            i = i + 1;
+//            System.out.println(i++);
 //            if (i > 10) {
 //                break;
 //            }
 //        }
 //
 //        for (int i = 0; i < 10; i++) {
+//            System.out.print(i + " => ");
 //            if (i == 4) {
+//                System.out.println(i);
 //                continue;
 //            }
-//            System.out.println(i + 1);
+//            System.out.println(i * 10);
 //            // ...
 //        }
+
+//        System.out.println("Test");
 
 //        for (int i = 0; i < 10; i++) {
 //            for (int j = 0; j < 10; j++) {
 //                System.out.print("{" + i + "," + j + "}");
 //            }
-//            System.out.println("");
+//            System.out.println();
 //        }
 
         /*
@@ -97,10 +101,20 @@ public class Loop {
 //        } while (number != 5);
 //
 //        System.out.println("Enter any number:");
-//        int number = scanner.nextInt();
+//        int number = 0; //scanner.nextInt();
 //        while (number != 5) {
 //            System.out.println("Enter any number:");
 //            number = scanner.nextInt();
+//        }
+
+//        for1: for (int i = 0; i < 10; i++) {
+//            for (int j = 0; j < 10; j++) {
+//                System.out.print("*");
+//                if (j == 5) {
+//                    break for1;
+//                }
+//            }
+//            System.out.println();
 //        }
 
 //        test: for (int i = 0; i < 10; i++) {

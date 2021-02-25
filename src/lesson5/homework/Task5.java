@@ -27,6 +27,7 @@ public class Task5 {
      */
     public static void main(String[] args) {
 
+
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int[] f = new int[100];
@@ -44,5 +45,5 @@ public class Task5 {
             } else {
                 System.out.println("-1");
             }
-        }
     }
+}    
