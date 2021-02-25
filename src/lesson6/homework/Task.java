@@ -12,6 +12,24 @@ public class Task {
      * PS. Чем оригинальнее и необычнее тем круче, жду ваших свершений) Ну и + доделать прошлое Дз
      */
     public static void main(String[] args) {
-        // write your code here
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите кол-во элементов массива:  ");
+        int n = in.nextInt();
+
+
+        int[] a = new int[n];
+        System.out.println("Введите числа");
+        for (int i = 0; i < a.length; i++) {
+            a[i] = in.nextInt();
+
+        } for (int i = 1; i < n; i++)
+
+            if (a[i] > 0 && a[i-1] > 0 || a[i] < 0 && a[i-1] < 0){
+
+                System.out.println("Два соседних элемента одного знака: " + a[i-1] + " " + a[i]);
+                break;
+
+            }
     }
 }
