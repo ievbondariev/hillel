@@ -1,5 +1,7 @@
 package lesson6.homework;
 
+import java.util.Scanner;
+
 public class Task {
 
     /**
@@ -13,6 +15,24 @@ public class Task {
      */
     public static void main(String[] args) {
 
-       //
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Hi!");
+            String userAnswer = scanner.nextLine();
+        for (;;) {
+            System.out.println("Do you like our service? Write: yes or no");
+            userAnswer = scanner.nextLine();
+            switch (userAnswer) {
+                case "yes", "Yes", "YES" -> {
+                    System.out.println("Thank you for for your positive answer!");
+                    return;
+                }
+                case "no", "No", "NO" -> {
+                    System.out.println("Wrong answer. Thank you!");
+                    return;
+                }
+                default -> System.out.println("Only yes you can choose)");
+            }
+        }
     }
 }
